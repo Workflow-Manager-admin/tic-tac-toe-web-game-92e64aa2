@@ -56,21 +56,21 @@ html, body, .App {
   background: var(--ttt-bg-main);
 }
 .App-header {
-  min-height: 100vh;
+  min-height: unset;
   background: var(--ttt-header-bg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 2em 1em 1em 1em;
+  padding: 1.1em 0.7em 0.5em 0.7em;
   box-sizing: border-box;
   position: relative;
 }
 .ttt-title {
-  font-size: 2.5rem;
+  font-size: 1.55rem;
   font-weight: 800;
   color: var(--ttt-primary);
-  margin: 1.6rem 0 .3rem;
+  margin: 0.8rem 0 .18rem;
   letter-spacing: -1px;
 }
 .theme-toggle {
@@ -92,14 +92,14 @@ html, body, .App {
 .theme-toggle:hover { opacity: 0.90; box-shadow: 0 3px 12px rgba(25, 118, 210, 0.11);}
 .theme-toggle:active { transform: scale(0.97);}
 .ttt-status {
-  font-size: 1.1em;
-  margin: 1.2em 0 0.4em 0;
+  font-size: 0.98em;
+  margin: 0.58em 0 0.28em 0;
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.7em;
-  min-height: 2.2em;
+  gap: 0.58em;
+  min-height: 1.5em;
 }
 .ttt-player {
   display: inline-block;
@@ -122,17 +122,17 @@ html, body, .App {
 }
 
 .ttt-board {
-  margin: 0.8em 0 0.5em 0;
+  margin: 0.5em 0 0.25em 0;
   background: var(--ttt-board-bg);
-  border-radius: 1em;
+  border-radius: 0.9em;
   box-shadow: var(--ttt-cell-shadow);
   display: flex;
   flex-direction: column;
-  gap: 0.1em;
-  padding: 1em;
-  min-width: 275px;
+  gap: 0.06em;
+  padding: 0.57em;
+  min-width: 215px;
   width: 100vw;
-  max-width: 350px;
+  max-width: 250px;
   transition: background 0.29s;
 }
 
@@ -145,20 +145,20 @@ html, body, .App {
 .ttt-square {
   font-family: inherit;
   background: #fff;
-  border: 2.5px solid var(--ttt-border);
-  border-radius: 0.4em;
-  font-size: 2.8rem;
+  border: 2px solid var(--ttt-border);
+  border-radius: 0.32em;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--ttt-primary);
-  width: 3.4em;
-  height: 3.4em;
+  width: 2.17em;
+  height: 2.17em;
   flex: 1 1 0;
   min-width: 0;
   min-height: 0;
-  margin: 0.07em;
+  margin: 0.03em;
   cursor: pointer;
   transition: background 0.18s, border-color 0.18s, color 0.15s, box-shadow 0.15s;
-  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.04);
+  box-shadow: 0 1px 3px rgba(25, 118, 210, 0.04);
   user-select: none;
 }
 .ttt-square:focus {
@@ -190,8 +190,8 @@ html, body, .App {
 
 .ttt-buttons {
   display: flex;
-  gap: 1.2em;
-  margin: 1.5em 0 0.6em 0;
+  gap: 0.58em;
+  margin: 0.65em 0 0.3em 0;
   justify-content: center;
 }
 
@@ -222,12 +222,12 @@ html, body, .App {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 1.7em;
-  margin: 0.5em 0 0 0;
-  font-size: 1.10em;
+  gap: 0.85em;
+  margin: 0.17em 0 0 0;
+  font-size: 0.97em;
   background: var(--ttt-board-bg);
-  border-radius: 0.8em;
-  padding: .7em 2em;
+  border-radius: 0.7em;
+  padding: .25em 0.65em;
   box-shadow: var(--ttt-cell-shadow);
 }
 .ttt-score {
@@ -238,8 +238,8 @@ html, body, .App {
 .ttt-score-o { color: var(--ttt-o);}
 .ttt-score-draw { color: var(--ttt-accent);}
 .ttt-footer {
-  margin-top: 2em;
-  font-size: 1em;
+  margin-top: 0.65em;
+  font-size: 0.94em;
   color: #8e98ad;
   letter-spacing: 0.01em;
 }
@@ -252,14 +252,14 @@ html, body, .App {
 /* Responsiveness */
 @media (max-width: 600px) {
   .App-header {
-    padding: 0.6em 0.3em 1em 0.3em;
+    padding: 0.38em 0.14em 0.45em 0.14em;
     min-height: unset;
   }
   .ttt-title {
-    font-size: 1.53rem;
+    font-size: 1.17rem;
   }
-  .ttt-board { min-width: 180px; max-width: 99vw; padding: 0.4em;}
-  .ttt-scoreboard { padding: 0.43em 0.7em; font-size: .98em;}
-  .theme-toggle { top: 0.7em; right: 0.7em; padding: 0.38em 0.8em; font-size: .95em; }
-  .ttt-btn { font-size: 0.98em; padding: 0.42em 0.98em;}
+  .ttt-board { min-width: 115px; max-width: 99vw; padding: 0.13em;}
+  .ttt-scoreboard { padding: 0.18em 0.3em; font-size: .89em;}
+  .theme-toggle { top: 0.34em; right: 0.29em; padding: 0.25em 0.69em; font-size: .83em; }
+  .ttt-btn { font-size: 0.87em; padding: 0.38em 0.89em;}
 }
